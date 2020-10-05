@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tickets",
+  "info": {
+    "name": "Ticket"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "tecnology": {
+      "model": "tecnology",
+      "via": "tickets"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "new",
+        "inProgress",
+        "done"
+      ]
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "ticket"
+    },
+    "assignedUser": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "myAssignments"
+    },
+    "severity": {
+      "type": "enumeration",
+      "enum": [
+        "low",
+        "half",
+        "high",
+        "critical"
+      ]
+    }
+  }
+}
