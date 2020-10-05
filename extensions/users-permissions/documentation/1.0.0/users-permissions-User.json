@@ -1251,6 +1251,89 @@
               }
             }
           },
+          "ticket": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "tecnology": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "user": {
+                "type": "string"
+              },
+              "assignedUser": {
+                "type": "string"
+              },
+              "severity": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "myAssignments": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "tecnology": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "assignedUser": {
+                  "type": "string"
+                },
+                "severity": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "name": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
           "created_by": {
             "required": [
               "id",
@@ -1374,6 +1457,21 @@
             "default": false
           },
           "role": {
+            "type": "string"
+          },
+          "ticket": {
+            "type": "string"
+          },
+          "myAssignments": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "name": {
+            "type": "string"
+          },
+          "lastname": {
             "type": "string"
           },
           "created_by": {
